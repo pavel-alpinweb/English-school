@@ -12,7 +12,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	sprite       = require('gulp.spritesmith'), //генерация спрайтов
 	autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
 	/*Подключаем библиотеки для создание svg спрайтов*/
-	svgSprite = require('gulp-svg-sprites'),
+	svgSprite = require('gulp-svg-sprite'),
 	svgmin = require('gulp-svgmin'),
 	cheerio = require('gulp-cheerio'),
 	replace = require('gulp-replace');
@@ -87,40 +87,41 @@ gulp.task('sprite', function() {
     spriteData.css.pipe(gulp.dest('app/css')); // путь, куда сохраняем стили
 });
 
-gulp.task('svgSprite', function () {
-	return gulp.src('app/img/icons/*.svg')
-	// minify svg
-		.pipe(svgmin({
-			js2svg: {
-				pretty: true
-			}
-		}))
-		// remove all fill, style and stroke declarations in out shapes
+gulp.task("svg", function() {
+	return gulp.src("./src/img/svg/icons/*.svg")
 		.pipe(cheerio({
-			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[stroke]').removeAttr('stroke');
-				$('[style]').removeAttr('style');
+			run: function($) {
+				$("[fill]").removeAttr("fill");
+				$("[stroke]").removeAttr("stroke");
+				$("[style]").removeAttr("style");
 			},
 			parserOptions: {xmlMode: true}
 		}))
-		// cheerio plugin create unnecessary string '&gt;', so replace it.
-		.pipe(replace('&gt;', '>'))
-		// build svg sprite
+		.pipe(replace("&gt;", ">"))
 		.pipe(svgSprite({
+			shape: {
+			dimension: {
+					maxWidth: 32,
+					maxHeight: 32
+			}
+		  },   
 			mode: {
-				symbol: {
-					sprite:"img/sprite.svg",
+				css: {
+					dest: "./",
+					layout: "diagonal",
+					sprite: "sprite.svg",
+					bust: false,
 					render: {
-						scss: {
-							dest:'scss/_sprite.scss',
-							template: "app/scss/setings/_sprite_template.scss"
-						}
+						css: { }
 					}
 				}
+			},
+			variables: {
+				mapname: "icons"
 			}
 		}))
-		.pipe(gulp.dest('app'));
+		.pipe(gulp.dest("./dest/img/svg/sprites/"))
+		.pipe(debug({"title": "sprites"}))
 });
 
 
