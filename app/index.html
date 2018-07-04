@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="public">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="max-age=34700">
+    <title>Site Name</title>
+  </head>
+  <body>
+    
+  <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+  <style></style>
+
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <!-- <link rel="stylesheet" href="css/header.min.css"> -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Load Scripts Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script>var scr = {"scripts":[
+      {"src" : "js/libs.min.js", "async" : true},
+      {"src" : "js/common.js", "async" : true}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script> -->
+    <!-- Load Scripts End -->
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2fxeWJf1c6rMv91hMYxF9s-zdO-ZmmzE&amp;amp;amp;sensor=false"></script>
+    <script type="text/javascript">
+      var locations = [
+          ["Название метки 1", 50.4094919,30.6038815, "img/marker.png"],
+          ["Название метки 2", 50.427342,30.469137, "img/marker.png"],
+          ["Название метки 2", 42.8749982,74.5791558, "img/marker.png"],
+      ];
+      var map = new google.maps.Map(document.getElementById('map-js'), {
+          zoom: 10,
+          center: new google.maps.LatLng(50.427342,30.469137),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+       
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+       
+      for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+              position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+              map: map,
+              icon: {
+                  url: locations[i][3],
+                  scaledSize: new google.maps.Size(34, 38)
+              }
+          });
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+              return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, marker);
+              }
+          })(marker, i));
+      }
+      </script>
+  </body>
+</html>
