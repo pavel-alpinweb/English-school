@@ -17,8 +17,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	cheerio = require('gulp-cheerio'),
 	replace = require('gulp-replace');
 
-	// npm install gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace -g
-	// npm link gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace
+	// npm install --save gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace
 
 gulp.task('sass', function(){
 	return gulp.src('app/scss/**/*.scss')
