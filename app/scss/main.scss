@@ -3,5 +3,115 @@
 @import "setings/_vars";
 @import "setings/_base";
 @import "elements/_sprite";
+@import "sections/_baner-slider";
+@import "sections/_about";
+@import "sections/_programs";
+@import "sections/_feauter";
+@import "sections/_feauters-list";
+@import "sections/_numbers";
+@import "sections/_mission";
 
 
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin:0 auto;
+    &--flex{
+        display: flex;
+    }
+    &--flex-between{
+        justify-content: space-between;
+    }
+    &--flex-align-center{
+        align-items:center;
+    }
+    &--flex-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+.subtitle{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.title{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.2em;
+    &--line{
+        margin-bottom: 40px;
+        &:after{
+            content:'';
+            display: block;
+            width: 81px;
+            height: 6px;
+            background-color: #fe5d4b;
+            margin: 20px auto 0;
+        }
+    }
+}
+
+p{
+    color: #565d65;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 0;
+}
+
+
+
+.main-btn{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    box-shadow: 0 10px 50px rgba(247, 42, 42, 0.32);
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: $mainGradient;
+    line-height: 60px;
+    padding:0 32px;
+    transition:all 0.3s;
+    background-color: #fe7848;
+    &:hover{
+        background: #f72a2a;
+    }
+}
+
+.minititle{
+    text-align: center;
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.39px;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+.title{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 36px;
+    font-weight: 700;
+}

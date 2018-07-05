@@ -1,0 +1,60 @@
+.mission{
+    background-color: #f5f5fa;
+    padding: 75px 0 47px;
+    text-align: center;
+}
+
+.mission__hero{
+    text-align: center;
+    img{display: inline-block;margin-bottom: 22px;line-height: 0.75em;}
+}
+
+.mission__content{
+    max-width: 690px;
+    margin: 0 auto 40px;
+    opacity: 0.8;
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    position: relative;
+    &:before{
+        content:'';
+        display: block;
+        width: 78px;
+        height: 65px;
+        background-image: url('../img/cov-2.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top:0;
+        left: -122px;
+    }
+    &:after{
+        content:'';
+        display: block;
+        width: 78px;
+        height: 65px;
+        background-image: url('../img/cov-1.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom:0;
+        right: -96px;
+    }
+}
+
+.hero-name{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.75em;
+    margin-bottom: 7px;
+}
+
+.hero-status{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 300;
+}

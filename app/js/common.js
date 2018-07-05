@@ -2,11 +2,11 @@ $(document).ready(function(){
     // табы
     var myTabContent;
 
-    $('.tabs__item').click(function(event) {
+    $('.programs__tabs-item').click(function(event) {
         myTabContent = $(this).attr('data-content');
-        $('.product__card').hide();
-        $(myTabContent).fadeIn();
-        $('.tabs__item').removeClass('active');
+        $('.programs__container').hide().removeClass('active');
+        $(myTabContent).fadeIn().addClass('active');
+        $('.programs__tabs-item').removeClass('active');
         $(this).addClass('active');
     });
 
@@ -43,5 +43,25 @@ $(document).ready(function(){
             });
             return false;
         });
+
+
+        /*слайдер на главной*/
+        $('.baner-slider__js').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            adaptiveHeight: true,
+            arrows:false,
+            cssEase: 'linear'
+        });
+
+        $('.next-slide').click(function () { 
+            $('.baner-slider__js').slick('slickNext');
+        });
+        $('.prev-slide').click(function () { 
+            $('.baner-slider__js').slick('slickPrev');
+        });
+        
 });
 

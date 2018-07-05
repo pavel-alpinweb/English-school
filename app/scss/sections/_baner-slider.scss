@@ -1,0 +1,131 @@
+.baner-slider{
+    width: 100%;
+    min-height: 650px;
+    margin-top: 80px;
+    height: 100vh;
+    position: relative;
+}
+
+.baner-slider__item{
+    height:100vh;
+    background-size: cover;
+    background-position: top center;
+    &--1{
+        background-image: url('../img/slide1.jpg');
+    }
+    &--2{
+        background-image: url('../img/slide2.jpg');
+    }
+    &--3{
+        background-image: url('../img/slide3.jpg');
+    }
+    &--4{
+        background-image: url('../img/slide4.jpg');
+    }
+}
+
+
+.baner-slider__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.baner-slider__slogan{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.12px;
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.country{
+    color: #ffffff;
+    font-family: $fontBold;
+    font-size: 113px;
+    font-weight: 700;
+    line-height: 0.75em;
+}
+
+.languges{
+    text-align: left;
+    margin-left: 205px;
+    margin-top: 31px;
+}
+
+.languges-title{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.43px;
+}
+
+.languges__item{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.43px;
+}
+
+.location-link,.tell-link{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    .icon{margin-right: 10px;}
+    .tell{
+        color: #ffffff;
+        text-decoration: none;  
+    }
+}
+
+.location-link {
+    margin-left: 16px;
+}
+
+.tell-link {
+    margin-right: 21px;
+}
+
+.baner-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top:25px;
+    max-width: 1180px;
+    left: 50%;
+    margin-left: -590px;
+    z-index: 3;
+}
+
+.slider-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    max-width: 1180px;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -590px;
+    z-index: 3;
+    .icon{
+        width: 36px;
+        height: 36px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
