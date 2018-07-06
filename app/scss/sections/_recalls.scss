@@ -1,0 +1,129 @@
+.recalls{
+    padding: 127px 0 141px;
+    .title{
+        text-align: center;
+    }
+    .title--line{margin: 0;}
+    .container{
+        position: relative;
+    }
+}
+
+.recalls__item{
+    display: flex!important;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.recalls__detail{
+    max-width: 638px;
+    margin-left: 37px;
+    padding-top: 46px;
+}
+
+.recalls__avatar{
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -11px;
+        left: -48px;
+        background-image: url('../img/remark.png');
+        background-repeat: no-repeat;
+        width: 118px;
+        height: 75px;
+    }
+}
+
+.social{
+    position: absolute;
+    top: 50px;
+    left: 35px;
+}
+
+.recalls__title{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.62px;
+    line-height: 1.2em;
+    margin: 0 0 20px;
+}
+
+.racalls__text{
+    opacity: 0.7;
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.44px;
+}
+
+.recalls__name{
+    color: #121f26;
+    font-family: $mainFont;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0.75em;
+    letter-spacing: -0.66px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recalls__client{
+    color: #b13d34;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.75em;
+    letter-spacing: -0.48px;
+    text-align: center;
+    margin: 0;
+}
+
+.prev-recall .icon, .next-recall .icon{
+    width: 36px;
+    height: 36px;
+    color: #fe7848;
+    cursor: pointer;
+}
+
+.prev-recall{
+    position: absolute;
+    top: 114px;
+    left: -37px;
+}
+
+.next-recall{
+    position: absolute;
+    top: 114px;
+    right: 0;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li{
+        list-style: none;
+        line-height: 0.75em;
+        width: 11px;
+        height: 11px;
+        margin: 0 9px;
+        &.slick-active{
+            button{background-color: #fe5652;}
+        }
+        button{
+            text-indent: -9000px;
+            width: 8px;
+            height: 8px;
+            background-color: #adb8ca;
+            border-radius:50%;
+            padding: 0;
+        }
+    }
+}

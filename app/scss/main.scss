@@ -10,6 +10,8 @@
 @import "sections/_feauters-list";
 @import "sections/_numbers";
 @import "sections/_mission";
+@import "sections/_call-to-action";
+@import "sections/_recalls";
 
 
 .container{
@@ -27,6 +29,9 @@
     }
     &--flex-wrap{
         flex-wrap: wrap;
+    }
+    &--flex-center{
+        align-items:center;
     }
 }
 

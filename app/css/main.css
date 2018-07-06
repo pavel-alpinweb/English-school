@@ -1026,6 +1026,177 @@ img {
   font-size: 16px;
   font-weight: 300; }
 
+.call-to-action {
+  background-image: -webkit-gradient(linear, right top, left top, from(#fe4e55), to(#fe8045));
+  background-image: -webkit-linear-gradient(right, #fe4e55 0%, #fe8045 100%);
+  background-image: -o-linear-gradient(right, #fe4e55 0%, #fe8045 100%);
+  background-image: linear-gradient(to left, #fe4e55 0%, #fe8045 100%);
+  height: 245px; }
+  .call-to-action .effect {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url("../img/shapes.png") no-repeat right center; }
+
+.call-to-action__text {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-right: 135px; }
+
+.action-btn {
+  color: #fe5652;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 60px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 0 40px;
+  line-height: 60px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .action-btn:hover {
+    -webkit-box-shadow: 0 5px 21px rgba(40, 40, 40, 0.2);
+    box-shadow: 0 5px 21px rgba(40, 40, 40, 0.2); }
+
+.recalls {
+  padding: 127px 0 141px; }
+  .recalls .title {
+    text-align: center; }
+  .recalls .title--line {
+    margin: 0; }
+  .recalls .container {
+    position: relative; }
+
+.recalls__item {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 14px; }
+
+.recalls__detail {
+  max-width: 638px;
+  margin-left: 37px;
+  padding-top: 46px; }
+
+.recalls__avatar {
+  position: relative; }
+  .recalls__avatar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -48px;
+    background-image: url("../img/remark.png");
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 75px; }
+
+.social {
+  position: absolute;
+  top: 50px;
+  left: 35px; }
+
+.recalls__title {
+  color: #121f26;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.62px;
+  line-height: 1.2em;
+  margin: 0 0 20px; }
+
+.racalls__text {
+  opacity: 0.7;
+  color: #121f26;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.44px; }
+
+.recalls__name {
+  color: #121f26;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0.75em;
+  letter-spacing: -0.66px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.recalls__client {
+  color: #b13d34;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.75em;
+  letter-spacing: -0.48px;
+  text-align: center;
+  margin: 0; }
+
+.prev-recall .icon, .next-recall .icon {
+  width: 36px;
+  height: 36px;
+  color: #fe7848;
+  cursor: pointer; }
+
+.prev-recall {
+  position: absolute;
+  top: 114px;
+  left: -37px; }
+
+.next-recall {
+  position: absolute;
+  top: 114px;
+  right: 0; }
+
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 40px; }
+  .slick-dots li {
+    list-style: none;
+    line-height: 0.75em;
+    width: 11px;
+    height: 11px;
+    margin: 0 9px; }
+    .slick-dots li.slick-active button {
+      background-color: #fe5652; }
+    .slick-dots li button {
+      text-indent: -9000px;
+      width: 8px;
+      height: 8px;
+      background-color: #adb8ca;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      padding: 0; }
+
 .container {
   width: 100%;
   max-width: 1180px;
@@ -1049,6 +1220,11 @@ img {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+  .container--flex-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .subtitle {
   color: #121f26;

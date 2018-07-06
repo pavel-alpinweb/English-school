@@ -63,5 +63,20 @@ $(document).ready(function(){
             $('.baner-slider__js').slick('slickPrev');
         });
         
+        /*Слайдер отзывов*/
+        $('.recalls__slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            adaptiveHeight: true,
+            arrows:false
+        });
+
+        $('.next-recall').click(function () { 
+            $('.recalls__slider').slick('slickNext');
+        });
+        $('.prev-recall').click(function () { 
+            $('.recalls__slider').slick('slickPrev');
+        });
 });
 
