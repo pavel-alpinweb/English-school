@@ -17,12 +17,19 @@
     .container{
         height: 100%;
     }
+    @media only screen and (max-width : 992px) {
+        background-color: #fe8045;
+        background-image: none;
+    }
 }
 
 .logo .icon{
     width: 87px;
     height: 18px;
     margin-left: 20px;
+    @media only screen and (max-width : 992px) {
+        color: #fff;
+    }
 }
 
 .page-nav{
@@ -31,6 +38,10 @@
     align-items: center;
     width: 50%;
     height: 100%;
+    @media only screen and (max-width : 992px) {
+        width: auto;
+        background-color: #fe8045;
+    }
 }
 
 .page-nav__menu{
@@ -93,6 +104,9 @@
     letter-spacing: -0.25px;
     display: flex;
     align-items: center;
+    @media only screen and (max-width : 992px) {
+        display: none;
+    }
     &:before{
         content: '';
         display: block;

@@ -400,11 +400,18 @@ img {
   background-image: linear-gradient(to right, transparent 50%, #fe8045 50%); }
   .page-header .container {
     height: 100%; }
+  @media only screen and (max-width: 992px) {
+    .page-header {
+      background-color: #fe8045;
+      background-image: none; } }
 
 .logo .icon {
   width: 87px;
   height: 18px;
   margin-left: 20px; }
+  @media only screen and (max-width: 992px) {
+    .logo .icon {
+      color: #fff; } }
 
 .page-nav {
   margin-left: auto;
@@ -418,6 +425,10 @@ img {
   align-items: center;
   width: 50%;
   height: 100%; }
+  @media only screen and (max-width: 992px) {
+    .page-nav {
+      width: auto;
+      background-color: #fe8045; } }
 
 .page-nav__menu {
   display: -webkit-box;
@@ -487,6 +498,9 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .slogan {
+      display: none; } }
   .slogan:before {
     content: '';
     display: block;

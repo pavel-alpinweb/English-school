@@ -56,9 +56,6 @@
     font-weight: 700;
     margin: 0 0 20px;
     line-height: 1.2em;
-    @media only screen and (max-width : 1200px) {
-        font-size: 30px;
-    }
     &--line{
         margin-bottom: 40px;
         &:after{
@@ -124,4 +121,7 @@ p{
     font-family: $mainFont;
     font-size: 36px;
     font-weight: 700;
+    @media only screen and (max-width : 1200px) {
+        font-size: 30px;
+    }
 }

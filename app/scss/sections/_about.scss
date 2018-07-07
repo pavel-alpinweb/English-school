@@ -39,6 +39,10 @@
 
 .about__right{
     position: relative;
+    @media only screen and (max-width : 992px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .video-link{

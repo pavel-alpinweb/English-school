@@ -8,6 +8,12 @@
         align-items: center;
         background: url('../img/shapes.png') no-repeat right center;
     }
+    .container{
+        @media only screen and (max-width : 992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 }
 
 .call-to-action__text{
@@ -20,6 +26,9 @@
     @media only screen and (max-width : 1200px) {
         margin-right: 36px;
         margin-left: 20px;
+    }
+    @media only screen and (max-width : 992px) {
+        margin-bottom: 20px;
     }
 }
 

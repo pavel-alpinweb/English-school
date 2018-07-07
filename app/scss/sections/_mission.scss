@@ -29,6 +29,9 @@
         position: absolute;
         top:0;
         left: -122px;
+        @media only screen and (max-width : 992px) {
+            display: none;
+        }
     }
     &:after{
         content:'';
@@ -40,6 +43,9 @@
         position: absolute;
         bottom:0;
         right: -96px;
+        @media only screen and (max-width : 992px) {
+            display: none;
+        }
     }
 }
 

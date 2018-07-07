@@ -36,6 +36,9 @@
         background-repeat: no-repeat;
         width: 118px;
         height: 75px;
+        @media only screen and (max-width : 992px) {
+            display: none;
+        }
     }
 }
 
