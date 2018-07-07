@@ -1,0 +1,47 @@
+.camp{
+    background: url('../img/camp-bg.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    padding:60px;
+}
+
+.camp__title{
+    color: #fefefe;
+    font-family: $mainFont;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 0 0 70px;
+    &:before{
+        content: '';
+        display: block;
+        width: 59px;
+        height: 60px;
+        background-image: url('../img/tent.png');
+        margin-right: 15px;
+        line-height: 0.75em;
+    }
+}
+
+.camp__info{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    text-align: center;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+}
+
+.action-btn{
+    .icon{
+        width: 18px;
+        height: 13px;
+        margin-left: 10px;
+    }
+}

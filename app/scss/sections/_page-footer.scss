@@ -1,0 +1,122 @@
+.page-footer__top{
+    background-color: #333333;
+    padding: 80px 0;
+}
+
+.page-footer__logo{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.75em;
+    letter-spacing: 2.8px;
+    margin-bottom: 45px;
+}
+.seo-text{
+    max-width: 250px;
+}
+
+.seo-text p{
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.28px;
+}
+
+.social-bar{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.social-bar__item{
+    display: inline-block; 
+    margin: 0 7.5px;
+    a{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        &.vk-brands{
+            width: 22px;
+            height: 13px;
+        }
+    }
+}
+
+.page-footer__title{
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.75em;
+    letter-spacing: 0.8px;
+    margin-bottom: 35px;
+}
+
+.contacts__item{
+    padding-left: 30px;
+    position: relative;
+    img{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+}
+
+.contacts__number{
+    opacity: 0.6;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.75em;
+    letter-spacing: 0.7px;
+    margin-bottom: 26px;
+    &--address{
+        line-height: 23px;
+    }
+}
+
+.page-footer__bottom{
+    background-color: #2e2e2e;
+    padding: 25px;
+}
+
+.copyright{
+    opacity: 0.4;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.75em;
+}
+
+.footer-nav__menu{
+    display: flex;
+    align-items: center;
+    a{
+        opacity: 0.4;
+        color: #ffffff;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 0.75em;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+        transition:all .3s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+@each $usr in facebook, instagram, vk-brands{
+    .social-bar__item a.#{$usr} {
+        background-image: url('../img/#{$usr}.png');
+    }
+}
