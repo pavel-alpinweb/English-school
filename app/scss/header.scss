@@ -37,6 +37,9 @@
     display: flex;
     align-items: center;
     padding-left: 70px;
+    @media only screen and (max-width : 1200px) {
+        padding-left: 20px;
+    }
     li{
         list-style: none;
         line-height: 0.75em;
@@ -50,6 +53,9 @@
             letter-spacing: -0.92px;
             text-decoration: none;
             margin-right: 60px;
+            @media only screen and (max-width : 1200px) {
+                margin-right: 50px;
+            }
         }
     }
 }
@@ -69,6 +75,9 @@
     line-height: 41px;
     text-decoration: none;
     margin-right: 36px;
+    @media only screen and (max-width : 1200px) {
+        margin-right: 20px;
+    }
 }
 
 .logo{

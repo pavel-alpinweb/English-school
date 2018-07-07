@@ -6,6 +6,9 @@
 
 .feauters-list__container.feauters-list__container {
     margin-top: 70px;
+    @media only screen and (max-width : 1200px) {
+        padding: 0 20px;
+    }
 }
 
 .feauters-list__item{
@@ -100,6 +103,9 @@
     font-weight: 700;
     line-height: 0.75em;
     margin-bottom: 30px;
+    @media only screen and (max-width : 1200px) {
+        font-size: 15px;
+    }
     &:after{
         content: '';
         display: block;

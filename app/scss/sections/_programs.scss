@@ -2,6 +2,9 @@
     .title{text-align: center;}
     background-color: #f5f5fa;
     padding: 100px 0 76px;
+    @media only screen and (max-width : 1200px) {
+        padding: 100px 20px 76px;
+    }
 }
 
 .programs__tabs{
@@ -24,6 +27,9 @@
     cursor: pointer;
     opacity: 0.3;
     transition:all 0.3s;
+    @media only screen and (max-width : 1200px) {
+        font-size: 18px;
+    }
     &:before{
         content: '';
         display: block;
@@ -73,6 +79,9 @@
     position: relative;
     transition:all .3s;
     cursor: pointer;
+    @media only screen and (max-width : 1200px) {
+        width: 32%;
+    }
     &:hover{
         box-shadow: 0 12px 29px rgba(78, 91, 166, 0.29);
     }
@@ -96,6 +105,9 @@
 
 .course-info{
     padding: 30px;
+    @media only screen and (max-width : 1200px) {
+        padding-bottom: 45px;
+    }
     p{
         color: #999999;
         font-family: $mainFont;
@@ -136,4 +148,7 @@
     position: absolute;
     bottom:34px;
     left: 34px;
+    @media only screen and (max-width : 1200px) {
+        bottom:25px;
+    }
 }

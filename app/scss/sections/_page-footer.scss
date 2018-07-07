@@ -1,6 +1,9 @@
 .page-footer__top{
     background-color: #333333;
     padding: 80px 0;
+    @media only screen and (max-width : 1200px) {
+        padding: 80px 20px;
+    }
 }
 
 .page-footer__logo{
@@ -119,4 +122,8 @@
     .social-bar__item a.#{$usr} {
         background-image: url('../img/#{$usr}.png');
     }
+}
+
+.map iframe{
+    width: 400px;
 }

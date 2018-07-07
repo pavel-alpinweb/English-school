@@ -14,6 +14,10 @@
     max-width: 460px;
     width: 100%;
     padding-top: 56px;
+    @media only screen and (max-width : 1200px) {
+        max-width: 45%;
+        padding-left: 20px;
+    }
 }
 
 .img-container{
@@ -28,6 +32,9 @@
     max-width: 293px;
     height: auto;
     margin-bottom: 7px;
+    @media only screen and (max-width : 1200px) {
+        max-width: 49.4%;
+    }
 }
 
 .about__right{

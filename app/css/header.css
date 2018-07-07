@@ -429,6 +429,9 @@ img {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 70px; }
+  @media only screen and (max-width: 1200px) {
+    .page-nav__menu {
+      padding-left: 20px; } }
   .page-nav__menu li {
     list-style: none;
     line-height: 0.75em; }
@@ -442,6 +445,9 @@ img {
       letter-spacing: -0.92px;
       text-decoration: none;
       margin-right: 60px; }
+      @media only screen and (max-width: 1200px) {
+        .page-nav__menu li a {
+          margin-right: 50px; } }
 
 .header-btn {
   margin-left: auto;
@@ -459,6 +465,9 @@ img {
   line-height: 41px;
   text-decoration: none;
   margin-right: 36px; }
+  @media only screen and (max-width: 1200px) {
+    .header-btn {
+      margin-right: 20px; } }
 
 .logo {
   line-height: 0.75em; }

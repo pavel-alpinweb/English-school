@@ -10,6 +10,7 @@
     height:100vh;
     background-size: cover;
     background-position: top center;
+    min-height: 650px;
     &--1{
         background-image: url('../img/slide1.jpg');
     }
@@ -52,6 +53,9 @@
     font-size: 113px;
     font-weight: 700;
     line-height: 0.75em;
+    @media only screen and (max-width : 1200px) {
+        font-size: 90px;
+    }
 }
 
 .languges{
@@ -109,6 +113,10 @@
     left: 50%;
     margin-left: -590px;
     z-index: 3;
+    @media only screen and (max-width : 1200px) {
+        margin-left: 0;
+        left: 0;
+    }
 }
 
 .slider-nav{
@@ -122,6 +130,11 @@
     margin-top: -18px;
     margin-left: -590px;
     z-index: 3;
+    @media only screen and (max-width : 1200px) {
+        left:0;
+        margin-left: 0;
+        padding:0 20px;
+    }
     .icon{
         width: 36px;
         height: 36px;
