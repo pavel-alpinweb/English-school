@@ -12,8 +12,33 @@
 
 .img-column.img-column--left {
     width: 50%;
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+        img{max-width: 100%;margin: 0;width: 100%;}
+    }
 }
 
 .img-column.img-column--right {
     width: 50%;
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+    }
+    @media only screen and (max-width : 767px) {
+        img{max-width: 96%;}
+    }
+    @media only screen and (max-width : 480px) {
+        img{max-width: 100%;margin: 0;width: 100%;}
+    }
+}
+
+.about.about-feauters {
+    padding: 50px 0;
+}
+
+.about-feauters{
+    .main-btn{
+        @media only screen and (max-width : 480px) {
+            font-size: 14px;
+        }
+    }
 }

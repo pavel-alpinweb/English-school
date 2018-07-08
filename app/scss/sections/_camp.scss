@@ -6,6 +6,9 @@
     flex-direction:column;
     align-items: center;
     padding:60px;
+    @media only screen and (max-width : 480px) {
+        padding: 20px;
+    }
 }
 
 .camp__title{
@@ -16,6 +19,15 @@
     display: flex;
     align-items: center;
     margin: 0 0 70px;
+    @media only screen and (max-width : 767px) {
+        font-size: 25px;
+    }
+    
+    @media only screen and (max-width : 480px) {
+        font-size: 18px;
+        flex-direction: column;   
+        margin-bottom: 15px;
+    }
     &:before{
         content: '';
         display: block;
@@ -24,6 +36,10 @@
         background-image: url('../img/tent.png');
         margin-right: 15px;
         line-height: 0.75em;
+        @media only screen and (max-width : 480px) {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
     }
 }
 
@@ -36,9 +52,15 @@
     text-align: center;
     line-height: 1.2em;
     margin-bottom: 50px;
+    @media only screen and (max-width : 480px) {
+        font-size: 13px;
+    }
 }
 
 .action-btn{
+    @media only screen and (max-width : 480px) {
+        font-size: 12px;
+    }
     .icon{
         width: 18px;
         height: 13px;

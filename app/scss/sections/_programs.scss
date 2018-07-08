@@ -5,6 +5,9 @@
     @media only screen and (max-width : 1200px) {
         padding: 100px 20px 76px;
     }
+    @media only screen and (max-width : 480px) {
+        padding: 100px 10px 50px;
+    }
 }
 
 .programs__tabs{
@@ -13,6 +16,12 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 16px;
     margin-top: 70px;
+    @media only screen and (max-width : 767px) {
+        justify-content: space-between;
+    }
+    @media only screen and (max-width : 480px) {
+        padding-bottom: 0;
+    }
 }
 
 .programs__tabs-item{
@@ -29,6 +38,15 @@
     transition:all 0.3s;
     @media only screen and (max-width : 1200px) {
         font-size: 18px;
+    }
+    @media only screen and (max-width : 767px) {
+        font-size: 13px;
+        &.programs__tabs-item{
+            margin-right: 0;
+        }
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 9px;
     }
     &:before{
         content: '';
@@ -53,6 +71,9 @@
             bottom:-29px;
             @media only screen and (max-width : 992px) {
                 width: 150px;
+            }
+            @media only screen and (max-width : 480px) {
+                display: none;
             }
         }
     }
@@ -88,16 +109,22 @@
     @media only screen and (max-width : 1200px) {
         width: 32%;
     }
+    @media only screen and (max-width : 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     &:hover{
         box-shadow: 0 12px 29px rgba(78, 91, 166, 0.29);
     }
 }
 
 .programs__container{
-    display: flex;
     justify-content: space-between;
     padding-top: 65px;
     display: none;
+    @media only screen and (max-width : 767px) {
+        flex-wrap: wrap;
+    }
     &.active{
         display: flex!important;
     }

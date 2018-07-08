@@ -4,6 +4,10 @@
     margin-top: 80px;
     height: 100vh;
     position: relative;
+    @media only screen and (max-width : 480px) {
+        height: auto;
+        min-height: auto;
+    }
 }
 
 .baner-slider__item{
@@ -11,6 +15,11 @@
     background-size: cover;
     background-position: top center;
     min-height: 650px;
+    @media only screen and (max-width : 480px) {
+        min-height: auto;
+        height: auto;
+        padding:100px 0;
+    }
     &--1{
         background-image: url('../img/slide1.jpg');
     }
@@ -45,6 +54,9 @@
     letter-spacing: 0.43px;
     text-align: center;
     margin-bottom: 10px;
+    @media only screen and (max-width : 480px) {
+        font-size: 14px;
+    }
 }
 
 .country{
@@ -56,12 +68,21 @@
     @media only screen and (max-width : 1200px) {
         font-size: 90px;
     }
+    @media only screen and (max-width : 767px) {
+        font-size: 45px;
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 25px;
+    }
 }
 
 .languges{
     text-align: left;
     margin-left: 205px;
     margin-top: 31px;
+    @media only screen and (max-width : 480px) {
+        margin-left: 0;
+    }
 }
 
 .languges-title{

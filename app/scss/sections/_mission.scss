@@ -2,6 +2,9 @@
     background-color: #f5f5fa;
     padding: 75px 0 47px;
     text-align: center;
+    @media only screen and (max-width : 767px) {
+        padding: 75px 20px 47px; 
+    }
 }
 
 .mission__hero{

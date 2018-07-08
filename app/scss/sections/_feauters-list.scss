@@ -1,6 +1,9 @@
 .feauters-list{
     background-color: #f5f5fa;
     padding: 115px 0 40px;
+    @media only screen and (max-width : 480px) {
+        padding:40px 0;
+    }
     .title{text-align: center;}
 }
 
@@ -19,6 +22,13 @@
     position: relative;
     @media only screen and (max-width : 992px) {
         flex-basis: 50%;
+    }
+    @media only screen and (max-width : 767px) {
+        flex-basis: 100%;
+    }
+    @media only screen and (max-width : 480px) {
+        padding-left: 40px;
+        margin-bottom: 40px;
     }
     p{
         color: #121f26;
@@ -42,6 +52,9 @@
         top:0;
         left: 0;
         line-height: 0.75em;
+        @media only screen and (max-width : 480px) {
+            font-size: 35px;
+        }
     }
     &--1{
         &:before{

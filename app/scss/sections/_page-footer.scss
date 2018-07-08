@@ -27,11 +27,17 @@
         max-width: 100%;
         flex-basis: 50%;
     }
+    @media only screen and (max-width : 480px) {
+        flex-basis: 100%
+    }
 }
 
 .contacts{
     @media only screen and (max-width : 992px) {
         flex-basis: 50%;
+    }
+    @media only screen and (max-width : 480px) {
+        flex-basis: 100%
     }
 }
 
@@ -102,6 +108,20 @@
 .page-footer__bottom{
     background-color: #2e2e2e;
     padding: 25px;
+    @media only screen and (max-width : 767px) {
+        .container{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.footer-nav{
+    @media only screen and (max-width : 767px) {
+        order:-1;
+    }
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+    }
 }
 
 .copyright{
@@ -111,11 +131,24 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 0.75em;
+    @media only screen and (max-width : 767px) {
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .footer-nav__menu{
     display: flex;
     align-items: center;
+    @media only screen and (max-width : 480px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        li{
+            width: 100%;
+        }
+    }
     a{
         opacity: 0.4;
         color: #ffffff;

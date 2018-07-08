@@ -78,5 +78,15 @@ $(document).ready(function(){
         $('.prev-recall').click(function () { 
             $('.recalls__slider').slick('slickPrev');
         });
+
+        /*мобильное меню*/
+        $(".btn_mnu").click(function() {
+            $(this).toggleClass("active");
+            $('.page-nav').fadeToggle(400,
+                function(){
+                    $('.page-nav').removeAttr('style');
+                }
+            ).toggleClass('open');
+        });
 });
 
