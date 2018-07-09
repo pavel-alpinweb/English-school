@@ -29,7 +29,7 @@
                     <li><a href="/">Курсы</a></li>
                     <li><a href="/">Лагерь</a></li>
                 </ul>
-                <a href="javascript" class="header-btn">Записывайся</a>
+                <a data-fancybox data-src="#hidden-content" href="javascript:;" class="header-btn">Записывайся</a>
             </nav>
             <div class="btn_mnu">
                 <div class="btn_row"></div>
@@ -164,7 +164,7 @@
                 <div data-content="#category3" class="programs__tabs-item  programs__tabs-item--3">3. Международные <br>экзамены</div>
             </div>
             <div id="category1" class="programs__container active">
-                <div class="programs__item">
+                <div data-fancybox data-src="#hidden-content2" class="programs__item">
                     <img src="img/Placeholder.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -173,7 +173,7 @@
                         <div class="price"> <b>  от 1700 ₽ /</b>  8 занятий </div> 
                     </div>
                 </div>
-                <div class="programs__item">
+                <div data-fancybox data-src="#hidden-content3" class="programs__item">
                     <img src="img/Placeholder-1.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -182,7 +182,7 @@
                         <div class="price"><b>от 1700 ₽ /</b> 8 занятий </div> 
                     </div>
                 </div>
-                <div class="programs__item">
+                <div  data-fancybox data-src="#hidden-content4" class="programs__item">
                     <img src="img/Placeholder-2.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div id="category2" class="programs__container programs__container--center">
-                <div class="programs__item">
+                <div data-fancybox data-src="#hidden-content5" class="programs__item">
                     <img src="img/Placeholder-3.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -203,7 +203,7 @@
                         <div class="price"> <b>  от 1700 ₽ /</b>  8 занятий </div> 
                     </div>
                 </div>
-                <div class="programs__item">
+                <div  data-fancybox data-src="#hidden-content6" class="programs__item">
                     <img src="img/Placeholder-4.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -214,7 +214,7 @@
                 </div>
             </div>
             <div id="category3" class="programs__container programs__container--center">
-                <div class="programs__item">
+                <div data-fancybox data-src="#hidden-content7"  class="programs__item">
                     <img src="img/Placeholder-5.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -223,7 +223,7 @@
                         <div class="price"> <b>  от 1700 ₽ /</b>  8 занятий </div> 
                     </div>
                 </div>
-                <div class="programs__item">
+                <div data-fancybox data-src="#hidden-content8"  class="programs__item">
                     <img src="img/Placeholder-6.jpg" alt="Placeholder">
                     <div class="course-info">
                         <div class="course-name">english</div>
@@ -428,7 +428,7 @@
                 с носителями языка с 2008 года и не <br>
                 пропустили ни одного сезона!
         </div>
-        <a href="/" class="action-btn">
+        <a data-fancybox data-src="#hidden-content9" href="javascript:;" class="action-btn">
             Хочу учить английский!
             <svg class="icon icon-button-arrow">
                 <use xlink:href="img/sprite.svg#button-arrow"></use>
@@ -489,6 +489,449 @@
            </div>
        </div> 
     </footer>
+
+    <div style="display: none;" id="hidden-content">
+        <div class="window window-form">
+            <form action="/" class="main-form">
+                <h2 class="title--line">Заявка на обучение</h2>
+                <div class="input-group">
+                    <input placeholder="Ваше имя" type="text"/>
+                </div>
+                <div class="input-group">
+                    <input placeholder="Ваш номер телефона" type="text"/>
+                </div>
+                <div class="remark-form">
+                    <img src="img/teacher.png" alt="img">
+                    <p>Мы перезвоним Вам для уточнения Ваших данных и ответим на интересующие вопросы!</p>
+                </div>
+                <button type="submit" class="main-btn">Отправить</button>
+            </form>
+            <div class="contacts-info">
+                <span class="contacts-info__text">
+                    Если вы не любите заполнять формы, то можете позвонить или написать в whatsapp по телефону:
+                </span>
+                <div class="contacts-info__number">
+                    <img src="img/whatsapp-brands.png" alt="whatsapp">8-917-865-83-23
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" id="hidden-content2">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line">Детские академические программы</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/kid-1.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Английский для самых <br>маленьких (2-3 года)</h3>
+                           <p>Коммуникативно-игровая методика, которая задействует все сенсорные системы. В жизни малыша появляется время погружения в язык. И таких моментов (от 5 до 60 минут) становится всё больше и больше, благодаря чему ребёнок свободно переходит с общения на родном языке на общение по-английски.</p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                    <b>Продолжительность занятия</b> 60 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Утренние, дневные и вечерние группы. 
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8 занятий) - от 1800 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-description">
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/kid-2.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Английский для <br>малышей (4-6 лет)</h3>
+                           <p>Курс основан на коммуникативной методике, благодаря которой дети начинают запоминать и разговаривать короткими фразами и умеют задавать вопросы, а не просто заучивают слова по темам. Уроки разнообразны по содержанию, используется аудио, видео материал, игры и сценки, которые помогают погрузиться в английский язык и заговорить на нем. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                    <b>Продолжительность занятия</b> 45 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Утренние, дневные и вечерние группы. 
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8 занятий) - от 1700 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="display: none;" id="hidden-content3">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line">Детские академические программы</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/School-1.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Младшие школьники — 1-3 класс</h3>
+                           <p>Интенсивный курс по чтению. Интенсивный курс чтения предназначен для учеников 1-3 классов и направлен на освоение правил чтения в максимально короткие сроки. 
+                                Курс основан на собственных методических разработках, созданных по опыту работу в сфере обучения детей чтению более 10 лет. 
+                                <br>
+                                <br>
+                                После интенсива, ученик сможет самостоятельно читать английские слова в рамках грамматической и лексической программы 1-3 класса. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Режим занятий</b> 2 раза в неделю по 90 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    В группе до 8 человек. Продолжительность: 2 месяца
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость курса от 5000 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-description">
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/School-2.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Младшие школьники — 1-4 класс</h3>
+                           <p>Коммуникативный курс для младших школьников, который главным образом направлен на возможность общения. Любой языковой курс зиждется на «четырех китах», именуемых чтением, письмом, устной речью и восприятием речи на слух. Коммуникативный метод, в первую очередь, нужен для того, чтобы снять страх перед живым общением, а затем подключает все остальные умения.</p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия </b> 50-60 минут 
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8 занятий) - от 1700 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-description">
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                            <img src="img/School-3.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Средние школьники — 5-7 класс</h3>
+                           <p>Коммуникативный курс для школьников - Основной принцип коммуникативной методики заключается в том, что весь процесс обучения направлен на использование языковых навыков в общении. Иными словами, основная задача – преодоление «языкового барьера». Однако это вовсе не означает полного отказа от изучения грамматики, лексикологии и фонологии. Такая методика позволяет сделать изучение языка естественным и интересным процессом. Именно она сегодня становится для многих дорогой в мир свободного общения с людьми со всего мира.</p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность</b> занятия 75 минут
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8 занятий) - от 2200 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content4">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line">Для студентов и взрослых</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/18+student.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Подготовка к программам 
+                            Work and Travel (США) 
+                            и Work and Study (Великобритания)</h3>
+                           <p>Work and Travel – это программа культурного международного обмена для студентов, в период с мая по сентябрь. Work and Study в Англии даёт возможность изучать самые популярные на сегодняшний день предметы и пройти практику в английских компаниях, офисах, гостиницах и ресторанах. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Индивидуальные</b>  занятия по 60 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     600 рублей в час
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-description">
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/18+.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Английский для взрослых (18+ лет)</h3>
+                           <p>Формат занятий - групповой на первом этапе подготовки - повышение уровня языка до требуемого и разбор заданий экзаменов - 4 месяца. Второй этап подготовки - групповой или индивидуальный - отработка непосредственно заданий экзамена. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия </b> 90-120 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8 занятий) от 3200 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content5">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line">Подготовка к ОГЭ</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/OGE.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Старшие школьники 7 - 9 класс.</h3>
+                           <p>Полный обзор грамматики, введение в словообразование и работа над аудированием - направлен на то, чтобы подтянуть уровень учащихся до соответствующего для сдачи экзаменов. А также это непосредственная отработка заданий, работа над аудированием, чтением, письмом и устной речью.</p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия </b>  90 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Длительность 9 месяцев (один учебный год)
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8-12 занятий) — 2500 ₽ - 3200 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content6">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line">Подготовка к ЕГЭ</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/EGE.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Старшие школьники 9 - 11 класс.</h3>
+                           <p>Полный обзор грамматики, введение в словообразование и работа над аудированием - направлен на то, чтобы подтянуть уровень учащихся до соответствующего для сдачи экзаменов. А также это непосредственная отработка заданий, работа над аудированием, чтением, письмом и устной речью.</p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия </b>  90 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Длительность 9 месяцев (один учебный год)
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость абонемента (8-12 занятий) — 2500 ₽ - 3200 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content7">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line"> Международные экзамены - TOEFL</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/EXAM-1.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Поготовка к экзамену</h3>
+                           <p>Формат занятий - групповой на первом этапе подготовки - повышение уровня языка до требуемого и разбор заданий экзаменов - 4 месяца. Второй этап подготовки - групповой или индивидуальный - отработка непосредственно заданий экзамена. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия</b>  90 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Стоимость абонемента (8 групповых занятий) - от 3500 ₽ 
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость индивидуального занятия (60 минут) - 600 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content8">
+            <div class="window window-program window-program--kids">
+                <div class="program-description">
+                    <h2 class="title--line"> Международные экзамены - IELTS</h2>
+                    <div class="program-description__content">
+                       <div class="program-description__action">
+                           <img src="img/EXAM-2.png" alt="kid">
+                           <button class="main-btn">Записаться</button>
+                       </div> 
+                       <div class="program-description__text">
+                           <h3 class="program-description__name">Поготовка к экзамену</h3>
+                           <p>Формат занятий - групповой на первом этапе подготовки - повышение уровня языка до требуемого и разбор заданий экзаменов - 4 месяца. Второй этап подготовки - групповой или индивидуальный - отработка непосредственно заданий экзамена. </p>
+                            <ul class="program-description__parametrs">
+                                <li>
+                                    <svg class="icon icon-clock-solid">
+                                        <use xlink:href="img/sprite.svg#clock-solid"></use>
+                                    </svg>
+                                   <b>Продолжительность занятия</b>  90 минут.
+                                </li>
+                                <li>
+                                    <svg class="icon icon-adjust-solid">
+                                         <use xlink:href="img/sprite.svg#adjust-solid"></use>
+                                    </svg>
+                                    Стоимость абонемента (8 групповых занятий) - от 3500 ₽ 
+                                </li>
+                                <li>
+                                    <svg class="icon icon-ruble-sign-solid">
+                                        <use xlink:href="img/sprite.svg#ruble-sign-solid"></use>
+                                     </svg>
+                                     Стоимость индивидуального занятия (60 минут) - 600 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="hidden-content9">
+            <div class="window window-camp">
+                <img src="img/camp.jpg" alt="camp">
+                <section class="camp-info">
+                    <h2 class="title--line">Летний лингвистический лагерь</h2>
+                    <div class="camp-info__text">
+                        <img src="img/globus.png" alt="globus">
+                        <h4>Мы проводим лингвистические смены с носителями языка с 2008 года и не пропустили ни одного сезона. </h4>
+                        <p>На протяжении этого времени немного экспериментировали с количеством участников и пришли к выводу, что для нас наиболее «комфортное» количество кемперов – 40-50 человек. Это позволяет не только гарантировать тщательный присмотр и уход за детьми, но и построить очень тёплые, доверительные отношения. Именно «камерная», домашняя обстановка позволяет подросткам сдружиться (практически сродниться) со своей командой и прочувствовать атмосферу всего лагеря. 
+                        </p>
+                    </div>
+                    <div class="camp-info__text">
+                        <img src="img/finger.png" alt="finger">
+                        <h4>Cоответствует всем нормам и стандартам. </h4>
+                        <p>Различного рода спортивные и интеллектуальные соревнования проводятся ежедневно в обязательном порядке. На территории лагеря проходят и дискотеки, к которым мы можем присоединиться своим составом.
+                        </p>
+                    </div>
+                    <div class="camp-info__text">
+                        <img src="img/cap.png" alt="cap">
+                        <h4>Мы заявляем о своей смене как лингвистической, и это ко многому нас обязывает.</h4>
+                        <p>Большинство участников настроены именно на погружение в язык, что мы и стараемся обеспечить. Согласно нашему опыту, к нам из года в год едут действительно мотивированные дети, которые готовы на 3-4 ежедневных урока даже летом! 
+                        </p>
+                    </div>
+                    <div class="camp-info__text">
+                        <img src="img/fire.png" alt="fire">
+                        <h4>«Фишка» последних лет – двуязычные смены. </h4>
+                        <p>За последние годы мы провели смены Spanglish, Chinish и Frenglish, где основным языком вполне закономерно выступал английский (3 занятия в день), но дополнительно проводились ознакомительные занятия испанским, китайским или французским соответственно (1 занятие в день). Разумеется, без дальнейшей практики эти «факультативы» не имеют большого смысла. Однако мы располагаем сведениями, что некоторые дети после лагеря продолжают изучать китайский и французский. И это очень вдохновляет!
+                        </p>
+                    </div>
+                </section>
+                <div class="camp-info__date">
+                    <img src="img/smile.png" alt="smile">
+                        с 28 мая - 10 июня 2019 года  <br>
+                        мы проводим лагерь в Анапе!
+                </div>
+                <button class="main-btn">Записаться</button>
+            </div>
+        </div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
