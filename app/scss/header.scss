@@ -30,7 +30,14 @@
     @media only screen and (max-width : 992px) {
         color: #fff;
     }
-    @media only screen and (max-width : 480px) {
+}
+
+.logo{
+    a{
+        color: #121f26;
+        @media only screen and (max-width : 992px) {
+            color: #fff;
+        } 
     }
 }
 

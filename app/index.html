@@ -9,25 +9,29 @@
     <meta http-equiv="Cache-Control" content="max-age=34700">
     <title>Site Name</title>
   </head>
-  <body>
+  <body id="top">
     
   <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
   <style></style>
-    <header class="page-header" id="top">
+    <header class="page-header">
         <div class="container container--flex container--flex-align-center">
+            
             <div class="logo">
+            <a class="top" href="#top">
                 <svg class="icon icon-logo">
                   <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
+            </a>
             </div>
+        
             <div class="slogan">
                     Школа иностранных языков
             </div>
             <nav class="page-nav">
                 <ul class="page-nav__menu">
-                    <li><a href="/">О нас</a></li>
-                    <li><a href="/">Курсы</a></li>
-                    <li><a href="/">Лагерь</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#programs">Курсы</a></li>
+                    <li><a href="#camp">Лагерь</a></li>
                 </ul>
                 <a data-fancybox data-src="#hidden-content" href="javascript:;" class="header-btn">Записывайся</a>
             </nav>
@@ -128,7 +132,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <a href="/" class="main-btn">Хочу изучать языки!</a>
         <div class="container container--flex container--flex-between">
             <div class="about__left">
@@ -154,7 +158,7 @@
         </div>
     </div>
 
-    <section class="programs">
+    <section class="programs" id="programs">
         <h4 class="minititle">подготавливаем и обучаем</h4>
         <h2 class="title">Наши академические программы</h2>
         <div class="container">
@@ -262,7 +266,7 @@
         </div>
     </div>
 
-    <div class="feauters-list">
+    <div class="feauters-list" id="feauters">
         <h4 class="minititle">подготавливаем и обучаем</h4>
         <h2 class="title">Наши преимущества</h2>
         <div class="feauters-list__container container container--flex container--flex-between container--flex-wrap">
@@ -351,7 +355,7 @@
         </div>
     </div>
 
-    <section class="recalls">
+    <section class="recalls" id="recalls">
         <h2 class="title title--line">Отзывы</h2>
         <div class="container">
            <div class="recalls__slider">
@@ -421,7 +425,7 @@
             
         </div>
     </section>
-    <section class="camp">
+    <section class="camp" id="camp">
         <h2 class="camp__title">Английский лагерь</h2>
         <div class="camp__info">
                 Мы проводим лингвистические смены <br>
@@ -480,10 +484,10 @@
                <span class="copyright">© 2018 Школа иностранных языков Мой Мир</span>
                <nav class="footer-nav">
                    <div class="footer-nav__menu">
-                       <li><a href="#">о школе</a></li>
-                       <li><a href="#">курсы</a></li>
-                       <li><a href="#">преимущества</a></li>
-                       <li><a href="#">отзывы</a></li>
+                       <li><a href="#about">о школе</a></li>
+                       <li><a href="#programs">курсы</a></li>
+                       <li><a href="#feauters">преимущества</a></li>
+                       <li><a href="#recalls">отзывы</a></li>
                    </div>
                </nav>
            </div>

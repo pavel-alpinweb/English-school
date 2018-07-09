@@ -413,6 +413,12 @@ img {
     .logo .icon {
       color: #fff; } }
 
+.logo a {
+  color: #121f26; }
+  @media only screen and (max-width: 992px) {
+    .logo a {
+      color: #fff; } }
+
 .page-nav {
   margin-left: auto;
   display: -webkit-box;

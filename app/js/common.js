@@ -34,7 +34,7 @@ $(document).ready(function(){
 
         /*up*/
         /*Плавная прокрутка*/
-        $(".push-up").click(function() {
+        $(".page-nav a, .logo a, .footer-nav__menu a").click(function() {
             $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
             }, {
