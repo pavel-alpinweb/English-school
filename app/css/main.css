@@ -649,6 +649,8 @@ img {
   line-height: 29px;
   text-decoration: underline;
   margin-top: 20px; }
+  .video-link:hover {
+    cursor: pointer; }
   .video-link .icon {
     width: 17px;
     height: 12px;
