@@ -141,6 +141,7 @@
 .footer-nav__menu{
     display: flex;
     align-items: center;
+    padding-left: 0;
     @media only screen and (max-width : 480px) {
         flex-direction: column;
         justify-content: center;
@@ -160,6 +161,7 @@
         letter-spacing: 1.4px;
         text-decoration: none;
         transition:all .3s;
+        margin: 0 7.5px;
         @media only screen and (max-width : 992px) {
             font-size: 10px;
         }
@@ -177,6 +179,7 @@
 
 .map iframe{
     width: 400px;
+    border: none;
     @media only screen and (max-width : 992px) {
         width: 100%;
     }
