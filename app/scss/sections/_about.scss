@@ -44,6 +44,9 @@
         max-width: 100%;
         margin-top: 20px;
     }
+    @media only screen and (max-width : 480px) {
+        width: 100%;
+    }
 }
 
 .half-img{
@@ -60,6 +63,9 @@
     @media only screen and (max-width : 992px) {
         display: flex;
         align-items: center;
+    }
+    @media only screen and (max-width : 480px) {
+        width: 100%;
     }
 }
 

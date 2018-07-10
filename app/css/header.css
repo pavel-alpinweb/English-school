@@ -506,7 +506,12 @@ img {
       font-weight: 500;
       letter-spacing: -0.92px;
       text-decoration: none;
-      margin-right: 60px; }
+      margin-right: 60px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .page-nav__menu li a:hover {
+        color: #000; }
       @media only screen and (max-width: 1200px) {
         .page-nav__menu li a {
           margin-right: 50px; } }

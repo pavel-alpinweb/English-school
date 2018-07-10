@@ -64,6 +64,10 @@
     position: absolute;
     top: 50px;
     left: 35px;
+    transition:all .3s;
+    &:hover{
+        transform: scale(1.2);
+    }
     @media only screen and (max-width : 767px) {
         left: 112px;
     }
@@ -125,6 +129,10 @@
     height: 36px;
     color: #fe7848;
     cursor: pointer;
+    transition:all .3s;
+    &:hover{
+        color: #000;
+    }
 }
 
 .prev-recall{
@@ -172,6 +180,9 @@
             background-color: #adb8ca;
             border-radius:50%;
             padding: 0;
+            &:hover{
+                background-color: #fe5652;
+            }
         }
     }
 }

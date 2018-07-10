@@ -503,7 +503,8 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: -0.4px; }
+  letter-spacing: -0.4px;
+  text-decoration: none; }
   .location-link .icon, .tell-link .icon {
     margin-right: 10px; }
   .location-link .tell, .tell-link .tell {
@@ -515,6 +516,8 @@ img {
 
 .tell-link {
   margin-right: 21px; }
+  .tell-link:hover {
+    text-decoration: underline; }
 
 .baner-links {
   display: -webkit-box;
@@ -563,7 +566,12 @@ img {
     width: 36px;
     height: 36px;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .slider-nav .icon:hover {
+      color: #fe8045; }
 
 .about {
   padding: 127px 0;
@@ -619,6 +627,9 @@ img {
     .img-container {
       max-width: 100%;
       margin-top: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .img-container {
+      width: 100%; } }
 
 .half-img {
   max-width: 293px;
@@ -640,6 +651,9 @@ img {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; } }
+  @media only screen and (max-width: 480px) {
+    .about__right {
+      width: 100%; } }
 
 .video-link {
   color: #fe5453;
@@ -735,7 +749,11 @@ img {
       justify-content: space-between; } }
   @media only screen and (max-width: 480px) {
     .programs__tabs {
-      padding-bottom: 0; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .programs__tabs-item {
   color: #121f26;
@@ -767,7 +785,7 @@ img {
         margin-right: 0; } }
   @media only screen and (max-width: 480px) {
     .programs__tabs-item {
-      font-size: 9px; } }
+      font-size: 18px; } }
   .programs__tabs-item:before {
     content: '';
     display: block;
@@ -1382,7 +1400,14 @@ img {
 .social {
   position: absolute;
   top: 50px;
-  left: 35px; }
+  left: 35px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .social:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
   @media only screen and (max-width: 767px) {
     .social {
       left: 112px; } }
@@ -1438,7 +1463,12 @@ img {
   width: 36px;
   height: 36px;
   color: #fe7848;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .prev-recall .icon:hover, .next-recall .icon:hover {
+    color: #000; }
 
 .prev-recall {
   position: absolute;
@@ -1489,6 +1519,8 @@ img {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       padding: 0; }
+      .slick-dots li button:hover {
+        background-color: #fe5652; }
 
 .camp {
   background: url("../img/camp-bg.jpg") no-repeat;
@@ -1682,6 +1714,11 @@ img {
   line-height: 0.75em;
   letter-spacing: 0.7px;
   margin-bottom: 26px; }
+  .contacts__number a {
+    color: #ffffff;
+    text-decoration: none; }
+  .contacts__number:hover {
+    opacity: 1; }
   .contacts__number--address {
     line-height: 23px; }
 
@@ -1875,19 +1912,24 @@ img {
   font-size: 36px;
   font-weight: 500;
   line-height: 0.75em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   margin-top: 23px; }
+  .contacts-info__number a {
+    color: #fe5553;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-decoration: none; }
+    .contacts-info__number a:hover {
+      text-decoration: underline; }
   @media only screen and (max-width: 480px) {
     .contacts-info__number {
       font-size: 28px; } }
@@ -2247,3 +2289,7 @@ p {
     top: -6px; }
   .btn_mnu.active .btn_row:nth-child(2) {
     opacity: 0; } }
+
+@media only screen and (max-width: 480px) {
+  .mobile-hidden {
+    display: none; } }

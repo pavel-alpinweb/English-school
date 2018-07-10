@@ -100,6 +100,10 @@
             letter-spacing: -0.92px;
             text-decoration: none;
             margin-right: 60px;
+            transition:all .3s;
+            &:hover{
+                color: #000;
+            }
             @media only screen and (max-width : 1200px) {
                 margin-right: 50px;
             }

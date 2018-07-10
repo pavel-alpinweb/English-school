@@ -41,12 +41,12 @@
     </header>
     <div class="baner-slider">
         <div class="baner-links">
-            <div class="location-link">
+            <a href="footer" class="location-link">
                 <svg class="icon pin-map-icon">
                     <use xlink:href="img/sprite.svg#pin-map-icon"></use>
                 </svg>
                 Наб.Челны
-            </div>
+            </a>
             <div class="tell-link">
                 <svg class="icon phone-call-icon">
                     <use xlink:href="img/sprite.svg#phone-call-icon"></use>
@@ -130,7 +130,7 @@
     </div>
 
     <div class="about" id="about">
-        <a href="/" class="main-btn">Хочу изучать языки!</a>
+        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="main-btn">Хочу изучать языки!</a>
         <div class="container container--flex container--flex-between">
             <div class="about__left">
                 <h3 class="subtitle">о школе</h3>
@@ -238,14 +238,14 @@
     </section>
 
     <div class="about about-feauters">
-        <a href="/" class="main-btn">Беслатная консультация</a>
+        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="main-btn">Беслатная консультация</a>
         <div class="container container--flex container--flex-between">
             
             <div class="about__right">
                 <div class="img-container">
-                    <div class="img-column img-column--left"><img src="img/Background-2.jpg" alt="Background"></div>
+                    <div class="img-column img-column--left mobile-hidden"><img src="img/Background-2.jpg" alt="Background"></div>
                     <div class="img-column img-column--right">
-                        <img src="img/Background.jpg" alt="Background">
+                        <img  class=" mobile-hidden" src="img/Background.jpg" alt="Background">
                         <img src="img/Background-1.jpg" alt="Background">
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                 <h3 class="subtitle">наше богатство это</h3>
                 <h2 class="title">Преподаватели Школы <br>«Мой Мир»</h2>
                 <p>Постоянно совершенствуют свои навыки ведения уроков, а также личностные качества, которые позволяют стать детям, которые учатся на протяжении нескольких лет в нашей школе, наставниками, а взрослым студентам добрыми друзьями.</p>
-                <div class="video-link">Хочу изучать языки
+                <div  data-fancybox data-src="#hidden-content" href="javascript:;" class="video-link">Хочу изучать языки
                     <svg class="icon icon-button-arrow">
                         <use xlink:href="img/sprite.svg#button-arrow"></use>
                     </svg> 
@@ -347,7 +347,7 @@
                     Получай удовольствиет от изучения
                     <br>языка — учись у нас!
                 </div>
-                <a href="/" class="action-btn">Хочу учить английский!</a>
+                <a data-fancybox data-src="#hidden-content" href="javascript:;" class="action-btn">Хочу учить английский!</a>
             </div>
         </div>
     </div>
@@ -358,7 +358,7 @@
            <div class="recalls__slider">
                <div class="recalls__item">
                   <div class="recalls__avatar">
-                      <a href="/" class="social"><img src="img/vk-ic.png" alt="vk"></a> 
+                      <a href="/" class="social" target="blank"><img src="img/vk-ic.png" alt="vk"></a> 
                       <img src="img/avatar.png" alt="avatar">
                       <h5 class="recalls__name">Снежана Куртеева</h5>
                       <h6 class="recalls__client">Родитель</h6>
@@ -375,7 +375,7 @@
                </div>
                <div class="recalls__item">
                   <div class="recalls__avatar">
-                      <a href="/" class="social"><img src="img/vk-ic.png" alt="vk"></a> 
+                      <a href="/" class="social" target="blank"><img src="img/vk-ic.png" alt="vk"></a> 
                       <img src="img/avatar.png" alt="avatar">
                       <h5 class="recalls__name">Снежана Куртеева</h5>
                       <h6 class="recalls__client">Родитель</h6>
@@ -392,7 +392,7 @@
                </div>
                <div class="recalls__item">
                   <div class="recalls__avatar">
-                      <a href="/" class="social"><img src="img/vk-ic.png" alt="vk"></a> 
+                      <a href="/" class="social" target="blank"><img src="img/vk-ic.png" alt="vk"></a> 
                       <img src="img/avatar.png" alt="avatar">
                       <h5 class="recalls__name">Снежана Куртеева</h5>
                       <h6 class="recalls__client">Родитель</h6>
@@ -437,7 +437,7 @@
         </a>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer" id="footer">
        <div class="page-footer__top">
            <div class="container container--flex container--flex-between">
                <div class="seo-text">
@@ -455,8 +455,8 @@
                    <h4 class="page-footer__title">Контактная информация</h4>
                    <div class="contacts__item">
                        <img src="img/email-icon.svg" alt="email">
-                       <div class="contacts__number">my_english_club@bk.ru</div>
-                       <div class="contacts__number">(88552) 36-13-24,</div>
+                       <div class="contacts__number"><a href="mailto:my_english_club@bk.ru">my_english_club@bk.ru</a></div>
+                       <div class="contacts__number"><a href="tell:88552361324">(88552) 36-13-24</a></div>
                    </div>
                    <div class="contacts__item">
                         <img src="img/printer-icon.svg" alt="printer">
@@ -512,7 +512,7 @@
                     Если вы не любите заполнять формы, то можете позвонить или написать в whatsapp по телефону:
                 </span>
                 <div class="contacts-info__number">
-                    <img src="img/whatsapp-brands.png" alt="whatsapp">8-917-865-83-23
+                    <a href="tell:89178658323"><img src="img/whatsapp-brands.png" alt="whatsapp">8-917-865-83-23</a> 
                 </div>
             </div>
         </div>
@@ -525,7 +525,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/kid-1.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Английский для самых <br>маленьких (2-3 года)</h3>
@@ -557,7 +557,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/kid-2.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Английский для <br>малышей (4-6 лет)</h3>
@@ -596,7 +596,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/School-1.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Младшие школьники — 1-3 класс</h3>
@@ -632,7 +632,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/School-2.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Младшие школьники — 1-4 класс</h3>
@@ -658,7 +658,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                             <img src="img/School-3.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Средние школьники — 5-7 класс</h3>
@@ -690,7 +690,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/18+student.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Подготовка к программам 
@@ -718,7 +718,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/18+.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Английский для взрослых (18+ лет)</h3>
@@ -750,7 +750,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/OGE.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Старшие школьники 7 - 9 класс.</h3>
@@ -788,7 +788,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/EGE.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Старшие школьники 9 - 11 класс.</h3>
@@ -826,7 +826,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/EXAM-1.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Поготовка к экзамену</h3>
@@ -864,7 +864,7 @@
                     <div class="program-description__content">
                        <div class="program-description__action">
                            <img src="img/EXAM-2.png" alt="kid">
-                           <button class="main-btn">Записаться</button>
+                           <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
                        </div> 
                        <div class="program-description__text">
                            <h3 class="program-description__name">Поготовка к экзамену</h3>
@@ -930,7 +930,7 @@
                         с 28 мая - 10 июня 2019 года  <br>
                         мы проводим лагерь в Анапе!
                 </div>
-                <button class="main-btn">Записаться</button>
+                <button data-fancybox data-src="#hidden-content" class="main-btn">Записаться</button>
             </div>
         </div>
     <!--[if lt IE 9]>
@@ -941,7 +941,6 @@
     <![endif]-->
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/libs.css">
     <!-- <link rel="stylesheet" href="css/header.min.css"> -->
     <link rel="stylesheet" href="css/header.css">
@@ -951,45 +950,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <!-- <script>var scr = {"scripts":[
-      {"src" : "js/libs.min.js", "async" : true},
-      {"src" : "js/common.js", "async" : true}
-      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-    </script> -->
-    <!-- Load Scripts End -->
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2fxeWJf1c6rMv91hMYxF9s-zdO-ZmmzE&amp;amp;amp;sensor=false"></script>
-    <script>
-      var locations = [
-          ["Название метки 1", 50.4094919,30.6038815, "img/marker.png"],
-          ["Название метки 2", 50.427342,30.469137, "img/marker.png"],
-          ["Название метки 2", 42.8749982,74.5791558, "img/marker.png"],
-      ];
-      var map = new google.maps.Map(document.getElementById('map-js'), {
-          zoom: 10,
-          center: new google.maps.LatLng(50.427342,30.469137),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-      });
-       
-      var infowindow = new google.maps.InfoWindow();
-      var marker, i;
-       
-      for (i = 0; i < locations.length; i++) {
-          marker = new google.maps.Marker({
-              position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-              map: map,
-              icon: {
-                  url: locations[i][3],
-                  scaledSize: new google.maps.Size(34, 38)
-              }
-          });
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
-              return function() {
-                  infowindow.setContent(locations[i][0]);
-                  infowindow.open(map, marker);
-              }
-          })(marker, i));
-      }
-      </script>
   </body>
 </html>
